@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>McLibrary | Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/color.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/app.css'>
+
+    </head>
+<body>
+    
+    <header class="fixed top-0 left-0 w-full z-10">
+        <div class="bg-primary-9 text-tertiary-1 py-4 px-4 flex text-right justify-end items-center">
+            <div class="sm:flex items-center mx-2 sm:mx-8 md:mx-12">
+
+                <div class="sm:border-r py-1 md:px-2 text-sm">
+                    <p>support@mclibrary.com</p>
+                </div>
+
+                <div class="md:border-r py-1 md:px-2 text-sm">
+                    <a href="#">+234 803 601 4972</a>,
+                    <a href="#">+234 907 713 7167</a>
+                </div>
+
+                <div class="py-1 md:px-2">
+                    <ul class="flex items-center float-right md:float-none">
+                        <li class="ml-0 sm:ml-2 mx-2 my-0">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9995 0.00332907L9.92463 0C7.59362 0 6.08721 1.54552 6.08721 3.93762V5.75313H4.00105C3.82078 5.75313 3.6748 5.89927 3.6748 6.07954V8.71001C3.6748 8.89028 3.82095 9.03625 4.00105 9.03625H6.08721V15.6738C6.08721 15.854 6.23319 16 6.41346 16H9.13531C9.31558 16 9.46156 15.8539 9.46156 15.6738V9.03625H11.9008C12.081 9.03625 12.227 8.89028 12.227 8.71001L12.228 6.07954C12.228 5.99299 12.1936 5.91009 12.1325 5.84884C12.0714 5.78758 11.9882 5.75313 11.9016 5.75313H9.46156V4.2141C9.46156 3.47438 9.63783 3.09886 10.6014 3.09886L11.9991 3.09836C12.1792 3.09836 12.3252 2.95222 12.3252 2.77211V0.329578C12.3252 0.149642 12.1794 0.00366197 11.9995 0.00332907Z" fill="white"/></svg>                                    
+                            </a>
+                        </li>
+
+                        <li class="mx-2 my-0">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M15.9844 4.70404C15.9469 3.8539 15.8094 3.26944 15.6125 2.76299C15.4093 2.22541 15.0968 1.74412 14.6873 1.34401C14.2872 0.937683 13.8027 0.621948 13.2714 0.421957C12.762 0.22502 12.1806 0.0875415 11.3304 0.0500586C10.4739 0.00940124 10.202 0 8.02975 0C5.85745 0 5.58555 0.00940124 4.73223 0.0468842C3.88209 0.0843671 3.29763 0.221967 2.79131 0.418783C2.2536 0.621948 1.77231 0.934509 1.37221 1.34401C0.96588 1.74412 0.650267 2.22858 0.450155 2.75994C0.253217 3.26944 0.11574 3.85073 0.0782567 4.70087C0.0375995 5.55736 0.0281982 5.82926 0.0281982 8.00156C0.0281982 10.1739 0.0375995 10.4458 0.0750823 11.2991C0.112565 12.1492 0.250165 12.7337 0.447102 13.2401C0.650267 13.7777 0.96588 14.259 1.37221 14.6591C1.77231 15.0654 2.25678 15.3812 2.78813 15.5812C3.29763 15.7781 3.87892 15.9156 4.72918 15.9531C5.58237 15.9907 5.8544 16 8.02669 16C10.199 16 10.4709 15.9907 11.3242 15.9531C12.1743 15.9156 12.7588 15.7781 13.2651 15.5812C14.3404 15.1654 15.1906 14.3153 15.6063 13.2401C15.8031 12.7306 15.9407 12.1492 15.9782 11.2991C16.0157 10.4458 16.0251 10.1739 16.0251 8.00156C16.0251 5.82926 16.0219 5.55736 15.9844 4.70404ZM14.5436 11.2366C14.5091 12.018 14.3779 12.4399 14.2685 12.7212C13.9997 13.4183 13.4464 13.9715 12.7494 14.2403C12.4681 14.3497 12.0431 14.481 11.2647 14.5153C10.4208 14.5529 10.1677 14.5622 8.03292 14.5622C5.89811 14.5622 5.64183 14.5529 4.80097 14.5153C4.01957 14.481 3.59761 14.3497 3.31631 14.2403C2.96944 14.1121 2.65371 13.909 2.39743 13.6433C2.13175 13.3838 1.92859 13.0713 1.80039 12.7244C1.691 12.4431 1.55974 12.018 1.52544 11.2397C1.48783 10.3958 1.47855 10.1426 1.47855 8.00779C1.47855 5.87297 1.48783 5.6167 1.52544 4.77596C1.55974 3.99455 1.691 3.5726 1.80039 3.29129C1.92859 2.9443 2.13175 2.62869 2.40061 2.37229C2.65993 2.10661 2.97249 1.90345 3.31948 1.77537C3.60079 1.66597 4.02592 1.53472 4.80415 1.50029C5.64806 1.46281 5.90128 1.45341 8.03597 1.45341C10.174 1.45341 10.4271 1.46281 11.2679 1.50029C12.0493 1.53472 12.4713 1.66597 12.7526 1.77537C13.0995 1.90345 13.4152 2.10661 13.6715 2.37229C13.9371 2.63174 14.1403 2.9443 14.2685 3.29129C14.3779 3.5726 14.5091 3.99761 14.5436 4.77596C14.5811 5.61987 14.5905 5.87297 14.5905 8.00779C14.5905 10.1426 14.5811 10.3927 14.5436 11.2366Z" fill="white"/><path d="M8.02973 3.8916C5.76061 3.8916 3.91956 5.73254 3.91956 8.00178C3.91956 10.271 5.76061 12.112 8.02973 12.112C10.299 12.112 12.1399 10.271 12.1399 8.00178C12.1399 5.73254 10.299 3.8916 8.02973 3.8916ZM8.02973 10.6679C6.55764 10.6679 5.36356 9.47399 5.36356 8.00178C5.36356 6.52957 6.55764 5.33561 8.02973 5.33561C9.50195 5.33561 10.6959 6.52957 10.6959 8.00178C10.6959 9.47399 9.50195 10.6679 8.02973 10.6679Z" fill="white"/><path d="M13.262 3.72883C13.262 4.25872 12.8323 4.68837 12.3023 4.68837C11.7724 4.68837 11.3428 4.25872 11.3428 3.72883C11.3428 3.19882 11.7724 2.76929 12.3023 2.76929C12.8323 2.76929 13.262 3.19882 13.262 3.72883Z" fill="white"/></g><defs><clipPath id="clip0"><rect width="16" height="16" fill="white"/></clipPath></defs></svg>
+                            </a>
+                        </li>
+
+                        <li class="mx-2 my-0">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.3059 2.67206C11.9026 1.26709 10.0363 0.493011 8.04806 0.492188C3.95108 0.492188 0.61673 3.82645 0.615082 7.92453C0.614532 9.23456 0.956757 10.5134 1.60724 11.6406L0.552734 15.4922L4.49307 14.4586C5.5788 15.0508 6.80112 15.3629 8.04504 15.3633H8.04816C12.1447 15.3633 15.4794 12.0287 15.481 7.93048C15.4818 5.94433 14.7093 4.07693 13.3059 2.67206ZM8.04806 14.108H8.0455C6.93698 14.1075 5.84979 13.8096 4.90112 13.2469L4.67563 13.1129L2.33737 13.7263L2.96149 11.4466L2.81454 11.2128C2.19611 10.2292 1.86954 9.09228 1.87009 7.92499C1.87137 4.51877 4.64285 1.74756 8.05054 1.74756C9.70068 1.74811 11.2519 2.39154 12.4182 3.5593C13.5846 4.72705 14.2266 6.27923 14.226 7.93002C14.2246 11.3365 11.4533 14.108 8.04806 14.108ZM11.4368 9.48102C11.2511 9.388 10.338 8.93884 10.1677 8.87677C9.99759 8.81479 9.87362 8.78393 9.74994 8.96979C9.62607 9.15564 9.2702 9.57403 9.1618 9.6979C9.0534 9.82187 8.94519 9.83743 8.75943 9.74441C8.57367 9.65149 7.97528 9.45529 7.26584 8.82257C6.71377 8.33011 6.34106 7.72192 6.23267 7.53607C6.12445 7.35004 6.23175 7.25922 6.31415 7.15704C6.5152 6.90738 6.71652 6.64563 6.77841 6.52176C6.84039 6.3978 6.80936 6.28931 6.76285 6.19638C6.71652 6.10345 6.34509 5.1893 6.19037 4.81732C6.03949 4.45532 5.8865 4.50421 5.77243 4.49853C5.66421 4.49313 5.54034 4.49203 5.41647 4.49203C5.29269 4.49203 5.09146 4.53845 4.92117 4.72449C4.75098 4.91043 4.27124 5.35968 4.27124 6.27383C4.27124 7.18799 4.93674 8.0711 5.02957 8.19507C5.12241 8.31903 6.33923 10.1949 8.20224 10.9993C8.64535 11.1909 8.99124 11.305 9.26105 11.3906C9.70599 11.532 10.1107 11.512 10.4308 11.4642C10.7877 11.4109 11.5295 11.0149 11.6844 10.5811C11.8392 10.1472 11.8392 9.77545 11.7927 9.6979C11.7463 9.62045 11.6225 9.57403 11.4368 9.48102Z" fill="white"/></svg>
+                            </a>
+                        </li>
+
+                        <li class="mx-2 my-0">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M10.4628 7.28101L6.92797 5.34693C6.72473 5.23572 6.4845 5.23987 6.28528 5.35791C6.08594 5.47608 5.96704 5.68482 5.96704 5.91651V9.75147C5.96704 9.98206 6.0852 10.1904 6.2832 10.3087C6.3866 10.3705 6.50122 10.4015 6.61609 10.4015C6.72131 10.4015 6.82678 10.3755 6.92382 10.3232L10.4587 8.42249C10.6686 8.30957 10.7995 8.09143 10.8005 7.85303C10.8014 7.61463 10.672 7.39551 10.4628 7.28101ZM6.90466 9.26904V6.40283L9.5465 7.84839L6.90466 9.26904Z" fill="white"/><path d="M15.8823 4.79773L15.8816 4.79041C15.868 4.66162 15.7332 3.51611 15.1763 2.93347C14.5326 2.24817 13.8029 2.16492 13.4519 2.125C13.4229 2.1217 13.3962 2.11865 13.3724 2.11548L13.3445 2.11255C11.2292 1.95874 8.03479 1.93774 8.00281 1.93762L8 1.9375L7.99719 1.93762C7.96521 1.93774 4.77075 1.95874 2.63647 2.11255L2.60828 2.11548C2.58557 2.11853 2.56055 2.12134 2.53333 2.12451C2.1864 2.16455 1.46448 2.24792 0.81897 2.95801C0.288574 3.53442 0.135254 4.6554 0.119507 4.78137L0.117676 4.79773C0.112915 4.85132 0 6.12708 0 7.40784V8.6051C0 9.88586 0.112915 11.1616 0.117676 11.2153L0.11853 11.2234C0.13208 11.3501 0.266846 12.4746 0.821167 13.0575C1.42639 13.7198 2.19165 13.8075 2.60327 13.8546C2.66833 13.8621 2.72437 13.8684 2.76257 13.8751L2.79956 13.8802C4.02087 13.9965 7.8501 14.0537 8.01245 14.056L8.01733 14.0562L8.02222 14.056C8.0542 14.0559 11.2485 14.0349 13.3638 13.8811L13.3917 13.8782C13.4185 13.8746 13.4485 13.8715 13.4814 13.868C13.8264 13.8314 14.5444 13.7554 15.181 13.0549C15.7114 12.4784 15.8649 11.3574 15.8805 11.2316L15.8823 11.2152C15.8871 11.1615 16.0001 9.88586 16.0001 8.6051V7.40784C16 6.12708 15.8871 4.85144 15.8823 4.79773ZM15.0624 8.6051C15.0624 9.79053 14.9589 11.0114 14.9491 11.1234C14.9093 11.4321 14.7476 12.1414 14.4891 12.4222C14.0907 12.8606 13.6814 12.9041 13.3826 12.9357C13.3464 12.9395 13.313 12.9431 13.2827 12.9469C11.2368 13.0948 8.16296 13.1176 8.02136 13.1184C7.86255 13.1161 4.08936 13.0583 2.90527 12.9484C2.8446 12.9385 2.77905 12.9309 2.70996 12.9231C2.3595 12.8829 1.87976 12.828 1.51086 12.4222L1.5022 12.413C1.24829 12.1484 1.09119 11.4852 1.05127 11.1271C1.04382 11.0424 0.937622 9.80713 0.937622 8.6051V7.40784C0.937622 6.22375 1.04089 5.00427 1.0509 4.88989C1.09839 4.52625 1.26318 3.85999 1.51086 3.5907C1.92151 3.13904 2.35449 3.08899 2.64087 3.05591C2.66821 3.05273 2.69373 3.0498 2.71729 3.04675C4.79297 2.89807 7.88892 2.87598 8 2.87512C8.11108 2.87585 11.2059 2.89807 13.2632 3.04675C13.2885 3.04993 13.316 3.0531 13.3457 3.05652C13.6403 3.09009 14.0854 3.14087 14.494 3.57666L14.4978 3.58069C14.7517 3.84521 14.9088 4.52002 14.9487 4.88538C14.9558 4.96533 15.0624 6.20325 15.0624 7.40784V8.6051Z" fill="white"/></g><defs><clipPath id="clip0"><rect width="16.0001" height="16" fill="white"/></clipPath></defs></svg>                                                                        
+                            </a>
+                        </li>
+
+                        <li class="mx-2 my-0">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M13.9965 14V13.9995H14V8.86496C14 6.35313 13.4592 4.41821 10.5227 4.41821C9.11107 4.41821 8.16374 5.19288 7.77699 5.9273H7.73615V4.65271H4.9519V13.9995H7.85107V9.3713C7.85107 8.15271 8.08207 6.97438 9.59115 6.97438C11.0781 6.97438 11.1002 8.36505 11.1002 9.44946V14H13.9965Z" fill="white"/><path d="M0.230957 4.65332H3.13362V14.0001H0.230957V4.65332Z" fill="white"/><path d="M1.68117 0C0.753083 0 0 0.753083 0 1.68117C0 2.60925 0.753083 3.37808 1.68117 3.37808C2.60925 3.37808 3.36233 2.60925 3.36233 1.68117C3.36175 0.753083 2.60867 0 1.68117 0V0Z" fill="white"/></g><defs><clipPath id="clip0"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    
+        <div class="bg-white shadow-sm sticky top-0">
+            <div class="mx-auto px-4 sm:px-6 md:px-10 lg:px-16 py-2 md:py-6">
+                <div class="flex items-center justify-between">
+                    <button id="mobile_menu_toggle_button" type="button" class="md:hidden w-10 h-10 rounded-lg -ml-2 flex justify-center items-center">
+                        <svg id="menu-burger" class="text-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <svg id="menu-x" class="text-gray-500 w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+    
+                    <a href="#" class="font-bold text-gray-700 text-2xl">
+                        <img src="./images/logo.png" />
+                    </a>
+    
+                    <div class="flex items-center space-x-4">
+    
+                        <div class="hidden md:flex space-x-3 flex-1 lg:ml-8">
+                            <a href="/index.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Home</a>
+                            <a href="/features.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Features</a>
+                            <a href="/pricing.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Pricing</a>
+                            <a href="/about.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">About</a>
+                            <a href="/blogs.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Blog</a>
+                            <a href="/contact.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Contact us</a>
+                            <a href="/faqs" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">FAQs</a>
+                        </div>
+    
+                        <a href="#" class="w-24 text-center px-4 py-2 border border-transparent text-sm font-semibold rounded-sm shadow-sm text-tertiary-10 bg-primary-6 focus:outline-none">
+                            Login
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <div class="pt-2 pb-3 space-y-1">
+                        <a href="/index.html" class="bg-gray-50 text-gray-700 block pl-3 pr-4 py-2 text-base font-bold sm:pl-5 sm:pr-6">Home</a>
+                        <a href="/features.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Features</a>
+                        <a href="pricing.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Pricing</a>
+                        <a href="/about.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">About</a>
+                        <a href="/blogs.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Blog</a>
+                        <a href="/contact" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Contact us</a>
+                        <a href="/faqs.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">FAQs</a>
+                    </div>
+                     
+                </div>
+    
+            </div>
+        </div>
+    </header>
+
+
+    <main class="mt-36">
+
+        <!-- Hero Banner -->
+        <div class="relative">
+            <div class="w-full">
+                <div class="relative">
+                    <div class="absolute inset-0">
+                        <img class="h-full w-full object-cover" src="./images/blogs-banner.png" alt="People working on laptops">
+                    </div>
+                
+                    <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                        <h1 class="text-center text-3xl font-medium tracking-tight sm:text-3xl lg:text-6xl">
+                            <span class="block text-white">Our Blogs</span>
+                        </h1>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blogs List Section -->
+        <section class="py-16 bg-white px-2 sm:px-8 lg:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="p-0 bg-white rounded mx-2 md:mx-0">
+                    <img class="rounded-t w-full object-cover" src="/images/blogs/1.png" />
+                    
+                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
+                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
+                            Title
+                        </h1>
+    
+                        <div class="max-w-full mt-2 mb-6">
+                            <p class="text-md font-light tracking-wide text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                                vel soluta dolore id nesciunt eum nam ipsam.
+                            </p>
+                        </div>
+
+                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
+                            Read More
+                        </a>
+                    </div>
+                  
+                </div>
+
+                <div class="p-0 bg-white rounded mx-2 md:mx-0">
+                    <img class="rounded-t w-full object-cover" src="/images/blogs/2.png" />
+                    
+                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
+                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
+                            Title
+                        </h1>
+    
+                        <div class="max-w-full mt-2 mb-6">
+                            <p class="text-md font-light tracking-wide text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                                vel soluta dolore id nesciunt eum nam ipsam.
+                            </p>
+                        </div>
+
+                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
+                            Read More
+                        </a>
+                    </div>
+                  
+                </div>
+
+                <div class="p-0 bg-white rounded mx-2 md:mx-0">
+                    <img class="rounded-t w-full object-cover" src="/images/blogs/3.png" />
+                    
+                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
+                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
+                            Title
+                        </h1>
+    
+                        <div class="max-w-full mt-2 mb-6">
+                            <p class="text-md font-light tracking-wide text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                                vel soluta dolore id nesciunt eum nam ipsam.
+                            </p>
+                        </div>
+
+                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
+                            Read More
+                        </a>
+                    </div>
+                  
+                </div>
+
+                <div class="p-0 bg-white rounded mx-2 md:mx-0">
+                    <img class="rounded-t w-full object-cover" src="/images/blogs/4.png" />
+                    
+                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
+                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
+                            Title
+                        </h1>
+    
+                        <div class="max-w-full mt-2 mb-6">
+                            <p class="text-md font-light tracking-wide text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                                vel soluta dolore id nesciunt eum nam ipsam.
+                            </p>
+                        </div>
+
+                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
+                            Read More
+                        </a>
+                    </div>
+                  
+                </div>
+
+                <div class="p-0 bg-white rounded mx-2 md:mx-0">
+                    <img class="rounded-t w-full object-cover" src="/images/blogs/5.png" />
+                    
+                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
+                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
+                            Title
+                        </h1>
+    
+                        <div class="max-w-full mt-2 mb-6">
+                            <p class="text-md font-light tracking-wide text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                                vel soluta dolore id nesciunt eum nam ipsam.
+                            </p>
+                        </div>
+
+                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
+                            Read More
+                        </a>
+                    </div>
+                  
+                </div>
+
+                <div class="p-0 bg-white rounded mx-2 md:mx-0">
+                    <img class="rounded-t w-full object-cover" src="/images/blogs/6.png" />
+                    
+                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
+                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
+                            Title
+                        </h1>
+    
+                        <div class="max-w-full mt-2 mb-6">
+                            <p class="text-md font-light tracking-wide text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                                vel soluta dolore id nesciunt eum nam ipsam.
+                            </p>
+                        </div>
+
+                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
+                            Read More
+                        </a>
+                    </div>
+                  
+                </div>
+
+
+                
+            </div>
+          
+               
+        </section>
+
+        
+    </main>
+
+
+    <footer class="bg-tertiary-11" aria-labelledby="footerHeading">
+        <h2 id="footerHeading" class="sr-only">Footer</h2>
+
+        <div class="mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <hr class="my-2 border-b border-gray-800 mx-2 xl:mx-12">
+            <div class="my-8 px-2 md:px-10">
+                <p class="mt-4 text-xs text-gray-300">
+                    Signup for free newsletter and business tips
+                </p>
+                
+                <form class="mt-4 sm:flex sm:max-w-md">
+                    <label for="emailAddress" class="sr-only">Email address</label>
+                    <input type="email" name="emailAddress" id="emailAddress" autocomplete="email" required class="appearance-none min-w-0 w-full bg-transparent border border-gray-100 rounded-md py-2 px-4 text-base text-gray-600 placeholder-gray-500 focus:outline-none" placeholder="Enter your email">
+
+                    <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                        <button type="submit" class="w-full bg-indigo-500 border border-transparent rounded-sm py-2 px-4 flex items-center justify-center text-base font-medium text-tertiary-10 bg-primary-6 focus:outline-none">
+                        Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="px-2 md:px-10">
+                <div class="md:flex">
+                    <div class="md:flex w-full sm:w-2/3">
+                        <div class="my-8 md:mt-0 w-full sm:order-2">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Contact Information
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-secondary-1 text-sm font-light">
+                                        info@mcgeorgeconsulting.com
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <div class="text-secondary-1 text-sm font-light">
+                                        <a href="#">+234 803 601 4972</a>,
+                                        <a href="#">+234 907 713 7167</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="w-full">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Address
+                            </h3>
+                            <ul class="mt-4 space-y-4 text-secondary-1">
+                                <li>
+                                    <div class="text-secondary-1 text-sm font-light">
+                                        Development & Innovation Centre<br>
+                                        No 23, Ven Adefile Str, Off Lajorin Rd,<br>
+                                        G.R.A Ilorin, Kwara State<br>
+                                        240232<br>
+                                        Nigeria<br>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="text-secondary-1 text-sm font-light">
+                                        Discovery Centre,<br> 
+                                        215 Konoko Crescent, Off Ademola<br> 
+                                        Adetokunbo Crescent Wuse II, Abuja<br>
+                                        F.C.T 900208<br>
+                                        Nigeria<br>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="text-secondary-1 text-sm font-light">
+                                        Suite D91, Assets Corp Plaza. 21,<br>
+                                        Obafemi Awolowo Way, Ikeja, <br>
+                                        Near Ikeja Club. <br>
+                                        Opposite Computer Village, Ikeja, Lagos.<br>
+                                        Nigeria
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                   
+                    <div class="flex w-full sm:w-1/3">
+                        <div class="w-full">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Featured Links
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">Terms & Conditions</a></li>
+
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">Privacy Policy</a></li>
+
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">Social Impacts</a></li>
+
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">Careers</a></li>
+
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">Blog</a></li>
+
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">Photo gallery</a></li>
+
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">SiteMap</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="w-full">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Follow Us
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">Facebook</a></li>
+
+                                <li><a href="#" class="text-secondary-1 text-sm font-light">LinkedIn</a></li>
+
+                                <li><a href="#" class="text-base text-gray-300 hover:text-white">Whatsapp</a></li>
+                                
+                                <li><a href="#" class="text-base text-gray-300 hover:text-white">Messenger</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 md:flex md:items-center md:justify-center">
+                <p class="mt-8 text-xs text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2020 All Rights Reserved by McGeorge Consulting
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src='/js/main.js'></script>
+</body>
+</html>

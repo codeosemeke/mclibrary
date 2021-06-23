@@ -3,11 +3,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>McLibrary | Home Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel='stylesheet' type='text/css' media='screen' href='/css/color.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/app.css'>
@@ -15,7 +15,7 @@
     </head>
 <body>
     
-    <header>
+    <header class="fixed top-0 left-0 w-full z-10">
         <div class="bg-primary-9 text-tertiary-1 py-4 px-4 flex text-right justify-end items-center">
             <div class="sm:flex items-center mx-2 sm:mx-8 md:mx-12">
 
@@ -68,13 +68,10 @@
         <div class="bg-white shadow-sm sticky top-0">
             <div class="mx-auto px-4 sm:px-6 md:px-10 lg:px-16 py-2 md:py-6">
                 <div class="flex items-center justify-between">
-                    <!-- Menu Trigger -->
-                    <button type="button" class="md:hidden w-10 h-10 rounded-lg -ml-2 flex justify-center items-center">
-                        <svg class="text-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+                    <button id="mobile_menu_toggle_button" type="button" class="md:hidden w-10 h-10 rounded-lg -ml-2 flex justify-center items-center">
+                        <svg id="menu-burger" class="text-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <svg id="menu-x" class="text-gray-500 w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
-                    <!-- ./ Menu Trigger -->
     
                     <a href="#" class="font-bold text-gray-700 text-2xl">
                         <img src="./images/logo.png" />
@@ -83,13 +80,13 @@
                     <div class="flex items-center space-x-4">
     
                         <div class="hidden md:flex space-x-3 flex-1 lg:ml-8">
-                            <a href="#" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Home</a>
-                            <a href="#" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Features</a>
-                            <a href="#" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Pricing</a>
-                            <a href="#" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">About</a>
-                            <a href="#" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Blog</a>
-                            <a href="#" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Contact us</a>
-                            <a href="#" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">FAQs</a>
+                            <a href="/index.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Home</a>
+                            <a href="/features.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Features</a>
+                            <a href="/pricing.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Pricing</a>
+                            <a href="/about.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">About</a>
+                            <a href="/blogs.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Blog</a>
+                            <a href="/contact.html" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">Contact us</a>
+                            <a href="/faqs" class="px-2 py-2 hover:text-gray-600 text-sm rounded-lg text-gray-700 hover:text-gray-600">FAQs</a>
                         </div>
     
                         <a href="#" class="w-24 text-center px-4 py-2 border border-transparent text-sm font-semibold rounded-sm shadow-sm text-tertiary-10 bg-primary-6 focus:outline-none">
@@ -98,15 +95,15 @@
                     </div>
                 </div>
 
-                <div class="md:hidden" id="mobile-menu">
+                <div class="md:hidden hidden" id="mobile-menu">
                     <div class="pt-2 pb-3 space-y-1">
-                        <a href="#" class="bg-gray-50 text-gray-700 block pl-3 pr-4 py-2 text-base font-bold sm:pl-5 sm:pr-6">Home</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Features</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Pricing</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">About</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Blog</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Contact us</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">FAQs</a>
+                        <a href="/index.html" class="bg-gray-50 text-gray-700 block pl-3 pr-4 py-2 text-base font-bold sm:pl-5 sm:pr-6">Home</a>
+                        <a href="/features.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Features</a>
+                        <a href="pricing.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Pricing</a>
+                        <a href="/about.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">About</a>
+                        <a href="/blogs.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Blog</a>
+                        <a href="/contact" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">Contact us</a>
+                        <a href="/faqs.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6">FAQs</a>
                     </div>
                      
                 </div>
@@ -116,16 +113,137 @@
     </header>
 
 
-    <main>
+    <main class="mt-36">
 
+        <!-- Hero Banner -->
+        <div class="relative">
+            <div class="w-full">
+                <div class="relative">
+                    <div class="absolute inset-0">
+                        <img class="h-full w-full object-cover" src="./images/contact-banner.png" alt="People working on laptops">
+                    </div>
+                
+                    <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                        <h1 class="text-center text-3xl font-medium tracking-tight sm:text-3xl lg:text-6xl">
+                            <span class="block text-white">Contact us</span>
+                        </h1>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Contact Details -->
+        <section class="py-16 bg-white px-2 sm:px-8 lg:px-16">
+
+            <div class="text-center mb-6">
+                <h2 class="text-xl sm:text-3xl font-bold text-gray-700">Reach out to us</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded border border-primary-2 p-2 sm:p-4">
+
+                    <div class="bg-primary-3 w-8 h-8 rounded-sm p-1 my-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#668822"/></svg>
+                    </div>
+
+                    <h2 class="font-semibold text-lg text-gray-700 py-2">Location</h2>
+
+                    <div>
+                        <p class="font-light text-sm tracking-wide">
+                            Ground Floor, No 10, Ven Adefila Street, 
+                            Off Lajorin Road, G.R.A Ilorin, 
+                            Kwara State
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded mx-2 md:mx-0 border border-primary-2 p-2 sm:p-4">
+                    <div class="bg-primary-3 w-8 h-8 rounded-sm p-1 my-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#668822"/></svg>
+                    </div>
+
+                    <h2 class="font-semibold text-lg text-gray-700 py-2">Email</h2>
+
+                    <div>
+                        <a href="info@asmartfarm.com" class="font-light text-sm tracking-wide">
+                            info@asmartfarm.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded mx-2 md:mx-0 border border-primary-2 p-2 sm:p-4">
+                    <div class="bg-primary-3 w-8 h-8 rounded-sm p-1 my-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 15.5C18.75 15.5 17.55 15.3 16.43 14.93C16.08 14.82 15.69 14.9 15.41 15.17L13.21 17.37C10.38 15.93 8.06 13.62 6.62 10.78L8.82 8.57C9.1 8.31 9.18 7.92 9.07 7.57C8.7 6.45 8.5 5.25 8.5 4C8.5 3.45 8.05 3 7.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V16.5C21 15.95 20.55 15.5 20 15.5ZM19 12H21C21 7.03 16.97 3 12 3V5C15.87 5 19 8.13 19 12ZM15 12H17C17 9.24 14.76 7 12 7V9C13.66 9 15 10.34 15 12Z" fill="#668822"/>                            </svg>
+                    </div>
+
+                    <h2 class="font-semibold text-lg text-gray-700 py-2">Call</h2>
+
+                    <div class="text-base tracking-wide text-gray-700">
+                        <a href="#" class="block">+234 803 601 4972</a>
+                        <a href="#" class="block">+234 907 713 7167</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded mx-2 md:mx-0 border border-primary-2 p-0">
+                    <div id="googleMap" class="w-full h-full"></div>
+                </div>
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="w-full flex md:justify-center my-16">
+
+                <div class="w-full md:w-4/6">
+                    <div class="text-center my-3 md:my-6 px-2">
+                        <h2 class="text-xl font-semibold text-gray-600">Complete the form and we will be on touch</h2>
+                    </div>
+
+                    <div class="bg-white rounded mx-2 md:mx-0 border border-primary-2 p-2 sm:p-4">
+                        <form action="#">
+                            <div class="flex w-full flex-wrap py-3">
+                                <div class="w-full sm:w-1/2 px-2">
+                                    <label class="pb-2 text-gray-500">Your Name</label>
+                                    <input required type="text" name="name" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                                </div>
+
+                                <div class="w-full sm:w-1/2 px-2">
+                                    <label>Your Email</label>
+                                    <input required type="email" name="email" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                                </div>
+                            </div>
+
+                            <div class="w-full px-2 py-3">
+                                <label class="pb-2 text-gray-500">Subject</label>
+                                <input required type="text" name="subject" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                            </div>
+
+                            <div class="w-full px-2 py-3">
+                                <label class="pb-2 text-gray-500">Message</label>
+                                <textarea required rows="5" name="subject" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none"></textarea>
+                            </div>
+
+                            <div class="w-40 md:w-48 px-2 py-3">
+                                <button type="submit" class="w-full bg-indigo-500 border border-transparent rounded-sm py-2 px-4 flex items-center justify-center text-base font-medium text-tertiary-10 bg-primary-6 focus:outline-none">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
     </main>
 
 
-    <footer class="bg-gray-900" aria-labelledby="footerHeading">
+    <footer class="bg-tertiary-11" aria-labelledby="footerHeading">
         <h2 id="footerHeading" class="sr-only">Footer</h2>
 
         <div class="mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-            <div class="my-8 xl:mt-0 px-2 md:px-10">
+            <hr class="my-2 border-b border-gray-800 mx-2 xl:mx-12">
+            <div class="my-8 px-2 md:px-10">
                 <p class="mt-4 text-xs text-gray-300">
                     Signup for free newsletter and business tips
                 </p>
@@ -145,6 +263,26 @@
             <div class="px-2 md:px-10">
                 <div class="md:flex">
                     <div class="md:flex w-full sm:w-2/3">
+                        <div class="my-8 md:mt-0 w-full sm:order-2">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Contact Information
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-secondary-1 text-sm font-light">
+                                        info@mcgeorgeconsulting.com
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <div class="text-secondary-1 text-sm font-light">
+                                        <a href="#">+234 803 601 4972</a>,
+                                        <a href="#">+234 907 713 7167</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
                         <div class="w-full">
                             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                                 Address
@@ -182,25 +320,6 @@
                             </ul>
                         </div>
 
-                        <div class="my-8 md:mt-0 w-full">
-                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                Contact Information
-                            </h3>
-                            <ul class="mt-4 space-y-4">
-                                <li>
-                                    <a href="#" class="text-secondary-1 text-sm font-light">
-                                        info@mcgeorgeconsulting.com
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <div class="text-secondary-1 text-sm font-light">
-                                        <a href="#">+234 803 601 4972</a>,
-                                        <a href="#">+234 907 713 7167</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                    
                     <div class="flex w-full sm:w-1/3">
@@ -250,6 +369,21 @@
             </div>
         </div>
     </footer>
+
     <script src='/js/main.js'></script>
+
+    <script>
+        function initMap() {
+            var mapProp= {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+        
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly" async></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1AL1HFwxkDKTgmsWXGS5w45iVGcNYfh4&callback=myMap&libraries=&v=weekly" async></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1AL1HFwxkDKTgmsWXGS5w45iVGcNYfh4&callback=myMap"></script> -->
 </body>
 </html>

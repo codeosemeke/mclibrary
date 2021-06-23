@@ -3,3 +3,9 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: light;
 }
+
+.focus:ring-primary-6{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: #99cc33;
+    /* rgba(99, 102, 241, var(--tw-ring-opacity)); */
+}

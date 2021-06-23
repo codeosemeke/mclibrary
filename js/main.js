@@ -12,6 +12,7 @@ if(document.getElementById('mobile_menu_toggle_button') !='undefined'){
     
 }
 
+
 // Function to toggle a class
 function toggleElementClass(element, elemClass) {
     if(element.classList.contains(elemClass)){
