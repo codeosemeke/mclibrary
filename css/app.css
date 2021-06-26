@@ -9,3 +9,7 @@ body{
     --tw-ring-color: #99cc33;
     /* rgba(99, 102, 241, var(--tw-ring-opacity)); */
 }
+
+.splide__slide{
+    width: auto !important;
+}

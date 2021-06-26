@@ -11,8 +11,9 @@
 
     <link rel='stylesheet' type='text/css' media='screen' href='/css/color.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/app.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 
-    </head>
+</head>
 <body>
     
     <header class="fixed top-0 left-0 w-full z-10">
@@ -73,7 +74,7 @@
                         <svg id="menu-x" class="text-gray-500 w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
     
-                    <a href="/index.html" class="font-bold text-gray-700 text-2xl">
+                    <a href="#" class="font-bold text-gray-700 text-2xl">
                         <img src="./images/logo.png" />
                     </a>
     
@@ -112,20 +113,19 @@
         </div>
     </header>
 
-
     <main class="mt-36">
 
         <!-- Hero Banner -->
         <div class="relative">
             <div class="w-full">
-                <div class="relative">
+                <div class="relative py-16">
                     <div class="absolute inset-0">
-                        <img class="h-full w-full object-cover" src="./images/blogs-banner.png" alt="People working on laptops">
+                        <img class="h-full w-full object-cover" src="./images/about-banner.png" alt="People working on laptops">
                     </div>
                 
                     <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                        <h1 class="text-center text-3xl font-medium tracking-tight sm:text-3xl lg:text-6xl">
-                            <span class="block text-white">Our Blogs</span>
+                        <h1 class="text-center text-3xl font-medium leading-8 tracking-wide sm:text-4xl lg:text-5xl">
+                            <span class="block text-white">About McLibrary</span>
                         </h1>
                  
                     </div>
@@ -133,152 +133,231 @@
             </div>
         </div>
 
-        <!-- Blogs List Section -->
-        <section class="py-16 bg-white px-2 sm:px-8 lg:px-16">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <div class="p-0 bg-white rounded mx-2 md:mx-0">
-                    <img class="rounded-t w-full object-cover" src="/images/blogs/1.png" />
-                    
-                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
-                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
-                            Title
-                        </h1>
-    
-                        <div class="max-w-full mt-2 mb-6">
-                            <p class="text-md font-light tracking-wide text-gray-600">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-                                vel soluta dolore id nesciunt eum nam ipsam.
-                            </p>
-                        </div>
+        <!-- About Us Section -->
+        <section class="py-16 bg-tertiary-11 px-2 sm:px-8 lg:px-16">
+  
+            <div class="leading-8 text-gray-300 font-light text-md px-2 md:px-0">
+                <p>
+                    McLibrary is an Integrated Library Management Software equipped with millions of records, top-of-the-line technology and a responsive, user-friendly interface to 
+                    give you an excellent library management experience. 
+                </p>
 
-                        <a href="/blog-view.html" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
-                            Read More
-                        </a>
-                    </div>
-                  
-                </div>
-
-                <div class="p-0 bg-white rounded mx-2 md:mx-0">
-                    <img class="rounded-t w-full object-cover" src="/images/blogs/2.png" />
-                    
-                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
-                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
-                            Title
-                        </h1>
-    
-                        <div class="max-w-full mt-2 mb-6">
-                            <p class="text-md font-light tracking-wide text-gray-600">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-                                vel soluta dolore id nesciunt eum nam ipsam.
-                            </p>
-                        </div>
-
-                        <a href="/blog-view.html" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
-                            Read More
-                        </a>
-                    </div>
-                  
-                </div>
-
-                <div class="p-0 bg-white rounded mx-2 md:mx-0">
-                    <img class="rounded-t w-full object-cover" src="/images/blogs/3.png" />
-                    
-                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
-                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
-                            Title
-                        </h1>
-    
-                        <div class="max-w-full mt-2 mb-6">
-                            <p class="text-md font-light tracking-wide text-gray-600">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-                                vel soluta dolore id nesciunt eum nam ipsam.
-                            </p>
-                        </div>
-
-                        <a href="/blog-view.html" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
-                            Read More
-                        </a>
-                    </div>
-                  
-                </div>
-
-                <div class="p-0 bg-white rounded mx-2 md:mx-0">
-                    <img class="rounded-t w-full object-cover" src="/images/blogs/4.png" />
-                    
-                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
-                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
-                            Title
-                        </h1>
-    
-                        <div class="max-w-full mt-2 mb-6">
-                            <p class="text-md font-light tracking-wide text-gray-600">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-                                vel soluta dolore id nesciunt eum nam ipsam.
-                            </p>
-                        </div>
-
-                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
-                            Read More
-                        </a>
-                    </div>
-                  
-                </div>
-
-                <div class="p-0 bg-white rounded mx-2 md:mx-0">
-                    <img class="rounded-t w-full object-cover" src="/images/blogs/5.png" />
-                    
-                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
-                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
-                            Title
-                        </h1>
-    
-                        <div class="max-w-full mt-2 mb-6">
-                            <p class="text-md font-light tracking-wide text-gray-600">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-                                vel soluta dolore id nesciunt eum nam ipsam.
-                            </p>
-                        </div>
-
-                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
-                            Read More
-                        </a>
-                    </div>
-                  
-                </div>
-
-                <div class="p-0 bg-white rounded mx-2 md:mx-0">
-                    <img class="rounded-t w-full object-cover" src="/images/blogs/6.png" />
-                    
-                    <div class="border border-green-100 shadow-xs rounded-b p-4 md:p-6">
-                        <h1 class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate">
-                            Title
-                        </h1>
-    
-                        <div class="max-w-full mt-2 mb-6">
-                            <p class="text-md font-light tracking-wide text-gray-600">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-                                vel soluta dolore id nesciunt eum nam ipsam.
-                            </p>
-                        </div>
-
-                        <a href="#" class="border border-green-600 text-green-600 font-medium px-3 py-2 rounded">
-                            Read More
-                        </a>
-                    </div>
-                  
-                </div>
-
-
-                
+                <p>
+                    McLibrary spots all the features needed to make your library management experience seamless and efficient. Some of the industry-leading features on McLibrary are:
+                </p>
             </div>
-          
+
+
+            <div class="flex flex-wrap w-full py-4 md:py-10 px-2 md:px-0">
+                <div class="text-gray-300 font-light w-full md:w-1/2 pr-2 md:pr-8 lg:pr-20 text-md">
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Smart Acquisition & Cataloguing</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Best-in-class Security Protocols</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Unlimited Administrations & Patrons</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <img src="/images/about/1.png" alt="About Us" />
+                </div>
+            </div>
+
+
+            <div class="flex flex-wrap w-full py-4 md:py-10 px-2 md:px-0">
+                <div class="text-gray-300 font-light w-full md:w-1/2 text-md md:order-2">
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Patrons’ login, Patrons’ history & Patrons’ Review</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Patrons’ self-service check-in & check-out</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Subscription module</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 md:order-1 pr-2 md:pr-8 lg:pr-20">
+                    <img src="/images/about/2.png" alt="About Us" />
+                </div>
+            </div>
+
+
+            <div class="flex flex-wrap w-full py-4 md:py-10 px-2 md:px-0">
+                <div class="text-gray-300 font-light w-full md:w-1/2 pr-2 md:pr-8 lg:pr-20 text-md">
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Online reservation/hold option</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Unlimited email notifications & Due and overdue reminders</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">User-friendly & Cost-effective</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <img src="/images/about/3.png" alt="About Us" />
+                </div>
+            </div>
+
+
+            <div class="flex flex-wrap w-full py-4 md:py-10 px-2 md:px-0">
+                <div class="text-gray-300 font-light w-full md:w-1/2 text-md md:order-2">
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Proactive user-management system</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Quick reports & Patrons’ Review</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                        <h2 class="text-primary-8 text-lg font-medium pb-4">Cloud-based</h2>
+                        <div class="font-light">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repudiandae neque consequuntur, blanditiis fuga quos ipsam magni iste sit et facilis corrupti nihil, veniam officia consequatur perferendis ratione atque quae.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 md:order-1 pr-2 md:pr-8 lg:pr-20">
+                    <img src="/images/about/2.png" alt="About Us" />
+                </div>
+            </div>
                
         </section>
 
-        
-    </main>
+        <!-- After Benefits -->
+        <section class="py-16 bg-secondary-1 px-2 sm:px-8 lg:px-16">
+            <div class="md:flex w-full mx-2">
+                <div class="w-full flex items-center">
+                    <div class="pr-2 md:pr-10">
+                        <h2 class="sm:text-4xl md:text-5xl text-3xl mb-4 font-medium mb-4">Equiped with top of the line technology</h2>
 
+                        <p class="text-xl pb-6 font-light">McLibrary is an Integrated Library Management Software equipped 
+                            with millions of records, top-of-the-line technology and a responsive, 
+                            user-friendly interface to give you an excellent library management 
+                            experience.</p>
+
+                        <div class="my-4">
+                            <a href="#" class="w-48 bg-indigo-500 border border-transparent rounded-sm py-2 px-4 flex items-center justify-center text-base font-medium text-tertiary-10 bg-primary-6 focus:outline-none">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="w-full sm:mr-4">
+                    <div class="sm:flex pl-0 md:pl-10">
+                        <div class="w-full sm:pr-4">
+                            <img src="./images/book-1.png" alt="Book" class="py-4 object-cover" />
+                            <img src="./images/book-3.png" alt="Book" class="py-4 object-cover" />
+                        </div>
+
+                        <div class="w-full sm:pl-4 sm:mt-8 md:mt-12">
+                            <img src="./images/book-2.png" alt="Library" class="py-4 object-cover" />
+                            <img src="./images/book-4.png" alt="Books" class="py-4 object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clienteles & Partners -->
+        <section class="pt-2 pb-16 bg-secondary-1 px-2 sm:px-8 lg:px-16">
+            <div>
+                <h2 class="text-gray-500 text-base uppercase font-semibold">Clienteles & Partners</h2>
+            </div>
+
+            <div class="my-8">
+                <div class="sm:flex w-full brand-slider">
+                    <img src="/images/brands/persianas.png" alt="Brands" class="w-full ml-0 mx-4 md:ml-0 md:mx-6 object-contain" />
+                    <img src="/images/brands/mott-mcdonald.png" alt="Brands" class="w-full mx-4 md:mx-6 object-contain" />
+                    <img src="/images/brands/lubcon.png" alt="Brands" class="w-full mx-4 md:mx-6 object-contain" />
+                    <img src="/images/brands/ndic.png" alt="Brands" class="w-full mx-4 md:mx-6 object-contain" />
+                    <img src="/images/brands/kwara-logo.png" alt="Brands" class="w-full mx-4 md:mx-6 object-contain" />
+                    <img src="/images/brands/unilorin.png" alt="Brands" class="w-full mx-4 md:mx-6 object-contain" />
+                    <img src="/images/brands/deepen.png" alt="Brands" class="w-full mx-4 md:mx-6 object-contain" />
+                    <img src="/images/brands/mdgs.png" alt="Brands" class="w-full mx-4 md:mx-6 object-contain" />
+                    <img src="/images/brands/bankphb.png" alt="Brands" class="w-full mx-4 md:mx-6 object-contain" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Teams -->
+        <section class="py-16 bg-tertiary-11 px-2 sm:px-8 lg:px-16 text-gray-300">
+
+            <div>
+                <div class="mx-2">
+                    <h2 class="text-white text-lg uppercase font-semibold">Our Teams</h2>
+                    <p class="text-sm py-2 text-gray-300 font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam harum.</p>
+                </div>
+
+                <div class="py-16">
+                    <div class="grid grid-cols-4 gap-8">
+                        <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
+                            <img src="/images/team/1.png" alt="Team Member" class="object-cover" />
+                        </div>
+
+                        <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
+                            <img src="/images/team/2.png" alt="Team Member" class="object-cover" />
+                        </div>
+
+                        <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
+                            <img src="/images/team/3.png" alt="Team Member" class="object-cover" />
+                        </div>
+
+                        <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
+                            <img src="/images/team/4.png" alt="Team Member" class="object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="bg-tertiary-11" aria-labelledby="footerHeading">
         <h2 id="footerHeading" class="sr-only">Footer</h2>
@@ -412,6 +491,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src='/js/main.js'></script>
 </body>
 </html>
