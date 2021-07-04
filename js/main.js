@@ -1,5 +1,5 @@
 // Mobile Menu Toggle Function
-if(document.getElementById('mobile_menu_toggle_button') !='undefined'){
+if(document.querySelectorAll('#mobile_menu_toggle_button').length > 0){
     let mobile_menu_button = document.getElementById('mobile_menu_toggle_button');
 
     mobile_menu_button.addEventListener('click', function (e) {
